@@ -1,5 +1,5 @@
 ﻿using System;
-
+//просто список пользователей
 namespace one
 {
     internal class Program
