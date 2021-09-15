@@ -5,7 +5,7 @@ namespace one
     internal class Program
     {
         
-        struct Abobys
+        struct User
         {
             public string firstName;
             public string gender;
@@ -19,10 +19,10 @@ namespace one
                 Console.WriteLine($"name: {firstName}, age: {age}, gender: {gender}");
             }
 
-            public Abobys getRandomUser()
+            public User getRandomUser()
             {
                 Random random = new Random();
-                Abobys user = new Abobys();
+                User user = new User();
                 user.age = random.Next(1, 100);
                 user.gender = genders[random.Next(0, genders.Length)];
                 user.firstName = names[random.Next(0, names.Length)];
@@ -32,18 +32,18 @@ namespace one
         public static void Main(string[] args)
         {
 
-            Abobys[] users = new[]
+            User[] users = new[]
             {
-                new Abobys().getRandomUser(),
-                new Abobys().getRandomUser(),
-                new Abobys().getRandomUser(),
-                new Abobys().getRandomUser(),
-                new Abobys().getRandomUser(),
-                new Abobys().getRandomUser(),
+                new User().getRandomUser(),
+                new User().getRandomUser(),
+                new User().getRandomUser(),
+                new User().getRandomUser(),
+                new User().getRandomUser(),
+                new User().getRandomUser(),
             };
-            foreach (var abobys in users)
+            foreach (var user in users)
             {
-                abobys.print();
+                user.print();
             }
         }
     }
