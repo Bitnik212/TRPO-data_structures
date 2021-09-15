@@ -38,6 +38,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Practice_2_1.cs" />
+        <Compile Include="Practice_2_2.cs" />
+        <Compile Include="Practice_2_3.cs" />
+        <Compile Include="Practice_2_4.cs" />
+        <Compile Include="Practice_2_5.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
